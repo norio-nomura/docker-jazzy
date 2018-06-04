@@ -15,6 +15,7 @@ RUN git clone --branch $SOURCEKITTEN_REVISION https://github.com/jpsim/SourceKit
     mv `swift build --configuration release --static-swift-stdlib --show-bin-path`/sourcekitten /usr/bin && \
     cd .. && \
     rm -rf SourceKitten && \
+    gem install bundler && \
     gem install jazzy --version "$JAZZY_VERSION"
 
 # Print Installed SourceKitten Version
