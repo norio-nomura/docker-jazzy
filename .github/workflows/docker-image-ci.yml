@@ -1,6 +1,15 @@
 name: Docker Image CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [master]
+    paths: 
+      - '.github/workflows/xcodebuild.yml'
+      - '*/Dockerfile'
+  pull_request:
+    paths:
+      - '.github/workflows/xcodebuild.yml'
+      - '*/Dockerfile'
 
 jobs:
 
