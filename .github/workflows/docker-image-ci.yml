@@ -4,11 +4,11 @@ on:
   push:
     branches: [master]
     paths: 
-      - '.github/workflows/xcodebuild.yml'
+      - '.github/workflows/docker-image-ci.yml'
       - '*/Dockerfile'
   pull_request:
     paths:
-      - '.github/workflows/xcodebuild.yml'
+      - '.github/workflows/docker-image-ci.yml'
       - '*/Dockerfile'
 
 jobs:
