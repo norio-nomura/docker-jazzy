@@ -16,6 +16,7 @@ RUN git clone --branch $SOURCEKITTEN_REVISION https://github.com/jpsim/SourceKit
     cd .. && \
     rm -rf SourceKitten && \
     gem install bundler && \
+    gem install cocoapods-downloader --version 1.3 && \
     gem install jazzy --version "$JAZZY_VERSION"
 
 # Print Installed SourceKitten Version

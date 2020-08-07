@@ -1,4 +1,4 @@
-FROM norionomura/swift:512
+FROM norionomura/swift:525
 LABEL maintainer "Norio Nomura <norio.nomura@gmail.com>"
 
 RUN apt-get update && apt-get install -y \
