@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y \
     libsqlite3-dev ruby-dev && \
     rm -r /var/lib/apt/lists/*
 
-ENV SOURCEKITTEN_REVISION="0.29.0"
+ENV SOURCEKITTEN_REVISION="0.30.1"
 ENV JAZZY_VERSION=""
 
 # Install SourceKitten
