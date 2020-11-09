@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y \
     libsqlite3-dev ruby-dev && \
     rm -r /var/lib/apt/lists/*
 
-ENV SOURCEKITTEN_REVISION="0.29.0"
+ENV SOURCEKITTEN_REVISION="0.30.1"
 ENV JAZZY_VERSION=""
 
 # Install SourceKitten
@@ -17,6 +17,7 @@ RUN git clone --branch $SOURCEKITTEN_REVISION https://github.com/jpsim/SourceKit
     rm -rf SourceKitten && \
     gem install bundler && \
     gem install cocoapods-downloader --version 1.3 && \
+    gem install cocoapods --version 1.9 && \
     gem install jazzy --version "$JAZZY_VERSION"
 
 # Print Installed SourceKitten Version
